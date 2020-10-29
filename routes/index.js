@@ -450,7 +450,7 @@ router.get('/api/news2/stock/', function (req, res, next) {
   }
 
   newsapi.v2.everything({
-    // q: req.query.q,
+    q: req.query.q,
     // sources: 'bbc-news,the-verge',
     // domains: 'bbc.co.uk,techcrunch.com',
     // from: '2017-12-01',
@@ -458,14 +458,14 @@ router.get('/api/news2/stock/', function (req, res, next) {
     // language: 'en',
     // sortBy: 'relevancy',
     // page: 1
-    q: 'bitcoin',
-    sources: 'bbc-news,the-verge',
-    domains: 'bbc.co.uk, techcrunch.com',
-    from: '2020-10-10',
-    to: '2020-10-29',
-    language: 'en',
-    sortBy: 'relevancy',
-    page: 2
+    // q: 'bitcoin',
+    // sources: 'bbc-news,the-verge',
+    // domains: 'bbc.co.uk, techcrunch.com',
+    // from: '2020-10-10',
+    // to: '2020-10-29',
+    // language: 'en',
+    // sortBy: 'relevancy',
+    // page: 2
   }).then(response => {
     console.log(response);
     /*
